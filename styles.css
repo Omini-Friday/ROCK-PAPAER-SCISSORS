@@ -1,0 +1,100 @@
+*,::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-family: cursive;
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+
+body{
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.layout__col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.layout__row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header, main, footer{
+    padding: 3rem 0;
+    background: #000;
+    color: #fff;
+    width: 100%;
+}
+
+header{
+    border-radius: 1rem 1rem 0 0;
+}
+footer{
+    border-radius: 0 0 1rem 1rem;
+}
+
+header h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.dashboard{
+    flex: 1;
+    margin-top: 3rem;
+}
+
+header p{font-size: 2rem;}
+
+main{
+    flex: 1;
+}
+
+.gameAction{
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.choiceBtns,.gameAction{
+    flex: 1;
+    width: inherit;
+    height: inherit;
+}
+
+.choice__btn{
+    border: none;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.reset__btn{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+@media (max-width:768px) {
+    .container{width: 100%;}
+    .dashboard p{
+        text-align: center;
+    }
+}

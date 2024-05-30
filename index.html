@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ROCK PAPER SCISSORS</title>
+</head>
+<body>
+    <section class="container layout__col">
+        <header class="layout__col">
+            <h1>Rock Paper Scissors</h1>
+            <section class="dashboard layout__row">
+                <p>Human: <span class="human">0</span></p>
+                <p>Moves: <span class="moves">0</span></p>
+                <p>Computer: <span class="computer">0</span></p>
+            </section>
+        </header>
+        <main class="layout__col">
+            <section class="gameAction layout__col">
+                <p class="game__outcome"></p>
+                <p class="computer__choice"></p>
+            </section>
+            <section class="choiceBtns layout__row">
+                <button type="submit" class="choice__btn" value="Paper">🤚</button>
+                <button type="submit" class="choice__btn" value="Rock">✊</button>
+                <button type="submit" class="choice__btn" value="Scissors">✂</button>
+            </section>
+        </main>
+        <footer class="layout__col">
+            <button type="reset" class="reset__btn">Replay</button>
+        </footer>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
